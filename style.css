@@ -582,9 +582,9 @@ textarea {
 
 .hero-image img {
   width: 100%;
-  height: 560px;
+  height: 620px;
   object-fit: cover;
-  object-position: center;
+  object-position: 35% center;
   border-radius: 0;
   box-shadow: none;
 }
@@ -679,8 +679,9 @@ body {
 .hero-image img {
   width: 100%;
   max-height: 520px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 24px;
+  object-position: 35% center;
 }
 
 .hero-content h1 {
@@ -698,9 +699,9 @@ body {
 .hero-image::before {
   content: "";
   position: absolute;
-  inset: -24px;
+  inset: -8px;
   background: var(--navy-dark);
-  border-radius: 40px;
+  border-radius: 24px;
   z-index: -2;
 }
 
@@ -918,4 +919,15 @@ h3 {
 
 .cta h2 {
   font-size: clamp(2rem, 3vw, 3.2rem);
+}
+
+.logo img {
+  height: 110px;
+  width: auto;
+  display: block;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
 }
