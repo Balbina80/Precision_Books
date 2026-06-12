@@ -724,8 +724,10 @@ h1 {
 }
 
 .hero-content h1 {
-  font-size: clamp(3rem, 5vw, 4.8rem);
+  font-size: clamp(2.4rem, 3.8vw, 3.6rem);
   line-height: 1.05;
+  letter-spacing: -0.05em;
+  margin-bottom: 12px;
 }
 
 h2 {
@@ -773,7 +775,7 @@ h3 {
 }
 
 .logo img {
-  height: 110px;
+  height: 95px;
   width: auto;
   display: block;
 }
@@ -781,4 +783,67 @@ h3 {
 .logo {
   display: flex;
   align-items: center;
+}
+
+/* Homepage spacing polish */
+
+.services-preview {
+  padding: 70px 0 90px;
+}
+
+.about-preview,
+.industries-preview {
+  padding: 90px 0;
+}
+
+.services-preview .eyebrow,
+.services-preview h2,
+.industries-preview .eyebrow,
+.industries-preview h2 {
+  text-align: center;
+}
+
+.services-preview h2,
+.industries-preview h2 {
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 45px;
+}
+
+.about-preview .eyebrow {
+  margin-bottom: 18px;
+}
+
+.about-preview h2 {
+  margin-bottom: 28px;
+}
+
+.about-preview .btn {
+  margin-top: 22px;
+}
+
+.industry-grid {
+  justify-content: center;
+  text-align: center;
+  margin-top: 35px;
+}
+
+.cta {
+  padding: 95px 0;
+}
+
+.about-preview {
+  padding-bottom: 50px !important;
+}
+
+.industries-preview {
+  padding-top: 50px !important;
+}
+
+.industry-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
 }
