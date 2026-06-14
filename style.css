@@ -785,17 +785,8 @@ p {
 }
 
 @media (max-width: 900px) {
-  .header-inner,
-  .main-nav {
-    flex-direction: column;
-  }
-
   .header-inner {
     padding: 16px 0;
-  }
-
-  .main-nav {
-    gap: 12px;
   }
 
   .hero-grid,
@@ -915,4 +906,46 @@ p {
 .industry-highlight p {
   max-width: 720px;
   margin: 0 auto 24px;
+}
+
+/* Mobile hamburger menu */
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--gold);
+  font-size: 1.8rem;
+  cursor: pointer;
+  padding: 8px;
+}
+
+@media (max-width: 900px) {
+
+  .header-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .main-nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+    padding: 20px 0;
+  }
+
+  .main-nav.active {
+    display: flex;
+  }
+
+  .header-inner .btn {
+    display: none;
+  }
 }
