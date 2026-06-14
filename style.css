@@ -653,11 +653,11 @@ p {
 
 .contact-section {
   background: var(--white);
-  padding-bottom: 140px;
+  padding: 70px 0 40px;
 }
 
 .contact-grid {
-  align-items: start;
+  align-items: stretch;
   gap: 70px;
 }
 
@@ -716,26 +716,26 @@ p {
   resize: vertical;
 }
 
-.benefits-section {
-  padding: 120px 0 60px;
+.contact-benefits {
   background: var(--cream);
+  padding: 30px 0 50px;
 }
 
-.benefits-section .eyebrow {
+.contact-benefits .eyebrow {
   text-align: center;
   margin-bottom: 12px;
 }
 
-.benefits-section h2 {
+.contact-benefits h2 {
   max-width: 850px;
   margin: 0 auto 36px;
   text-align: center;
   font-size: clamp(2rem, 3vw, 2.7rem);
 }
 
-.benefits-grid {
+.contact-benefits .benefits-grid {
   margin-top: 0;
-  padding-bottom: 120px;
+  padding-bottom: 0;
 }
 
 /* Footer */
