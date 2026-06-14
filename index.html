@@ -17,6 +17,10 @@
   <img src="images/logo_4.png" alt="Precision Books logo">
 </a>
 
+    <button class="nav-toggle" aria-label="Open menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
       <nav class="main-nav">
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
@@ -199,5 +203,17 @@
     </div>
   </footer>
 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const navToggle = document.querySelector(".nav-toggle");
+  const mainNav = document.querySelector(".main-nav");
+
+  if (navToggle && mainNav) {
+    navToggle.addEventListener("click", () => {
+      mainNav.classList.toggle("active");
+    });
+  }
+});
+</script>
 </body>
 </html>
