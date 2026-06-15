@@ -748,9 +748,10 @@ p {
 }
 
 .footer-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  gap: 34px;
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 60px;
+    align-items: center;
 }
 
 .footer-grid a,
@@ -974,15 +975,21 @@ p {
 }
 
 @media (max-width: 900px) {
-
   .header-inner {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    flex: 0 0 auto;
   }
 
   .nav-toggle {
     display: block;
+    margin-left: auto;
   }
 
   .main-nav {
@@ -991,7 +998,7 @@ p {
     flex-direction: column;
     text-align: center;
     gap: 16px;
-    padding: 20px 0;
+    padding: 18px 0 10px;
   }
 
   .main-nav.active {
@@ -1003,11 +1010,3 @@ p {
   }
 }
 
-@media (max-width: 768) {
-  .mobile-menu {
-    width: 80%;
-}
-.mobile-menu {
-  padding: 14px 0;
-}
-}
