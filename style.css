@@ -1002,3 +1002,12 @@ p {
     display: none;
   }
 }
+
+@media (max-width: 768) {
+  .mobile-menu {
+    width: 80%;
+}
+.mobile-menu {
+  padding: 14px 0;
+}
+}
