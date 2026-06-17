@@ -14,10 +14,10 @@
 <body>
 
 <header class="site-header">
-    <div class="container header-inner">
-      <a href="index.html" class="logo">
-  <img src="images/logo_4.png" alt="Precision Books logo">
-</a>
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <img src="images/logo_4.png" alt="Precision Books logo">
+    </a>
 
     <button class="nav-toggle" aria-label="Open menu">
       <i class="fa-solid fa-bars"></i>
@@ -42,9 +42,7 @@
   <section class="page-hero">
     <div class="container">
       <p class="eyebrow">Contact Us</p>
-
       <h1>Let's talk about your accounting needs.</h1>
-
       <p>
         Whether you need help with Self Assessment, Payroll,
         Bookkeeping, CIS or Limited Company Accounts,
@@ -54,155 +52,156 @@
   </section>
 
   <section class="contact-section">
+    <div class="container contact-grid">
 
-  <div class="container contact-grid">
+      <div class="contact-info">
+        <p class="eyebrow">Get In Touch</p>
+        <h2>Contact Precision Books</h2>
 
-    <div class="contact-info">
-
-      <p class="eyebrow">Get In Touch</p>
-
-      <h2>Contact Precision Books</h2>
-
-      <div class="contact-card">
-        <div class="contact-icon">
-          <i class="fa-solid fa-phone"></i>
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <div>
+            <strong>Phone</strong>
+            <p>
+              <a href="tel:07305396792">07305 396792</a>
+            </p>
+          </div>
         </div>
-        <div>
-          <strong>Phone</strong>
-          <p>07305 396792</p>
+
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div>
+            <strong>Email</strong>
+            <p>
+              <a href="mailto:precisionbooks.info@gmail.com">
+                precisionbooks.info@gmail.com
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div>
+            <strong>Location</strong>
+            <p>Northampton, United Kingdom</p>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fa-solid fa-clock"></i>
+          </div>
+          <div>
+            <strong>Response Time</strong>
+            <p>Usually within 24 hours</p>
+          </div>
         </div>
       </div>
 
-      <div class="contact-card">
-        <div class="contact-icon">
-          <i class="fa-solid fa-envelope"></i>
-        </div>
-        <div>
-          <strong>Email</strong>
-          <p>precisionbooks.info@gmail.com</p>
-        </div>
-      </div>
+      <div class="contact-form-wrapper">
+        <form class="contact-form">
 
-      <div class="contact-card">
-        <div class="contact-icon">
-          <i class="fa-solid fa-location-dot"></i>
-        </div>
-        <div>
-          <strong>Location</strong>
-          <p>Northampton, United Kingdom</p>
-        </div>
-      </div>
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input 
+              type="text" 
+              id="name" 
+              name="name" 
+              placeholder="Your Name" 
+              autocomplete="name" 
+              required>
+          </div>
 
-      <div class="contact-card">
-        <div class="contact-icon">
-          <i class="fa-solid fa-clock"></i>
-        </div>
-        <div>
-          <strong>Response Time</strong>
-          <p>Usually within 24 hours</p>
-        </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              placeholder="your@email.com" 
+              autocomplete="email" 
+              required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input 
+              type="tel" 
+              id="phone" 
+              name="phone" 
+              placeholder="Your Phone Number" 
+              autocomplete="tel">
+          </div>
+
+          <div class="form-group">
+            <label for="service">Service Required</label>
+            <select id="service" name="service" required>
+              <option value="">Please select a service</option>
+              <option value="Self Assessment">Self Assessment</option>
+              <option value="Limited Company Accounts">Limited Company Accounts</option>
+              <option value="Payroll">Payroll</option>
+              <option value="Bookkeeping">Bookkeeping</option>
+              <option value="CIS Returns">CIS Returns</option>
+              <option value="Landlord Tax Returns">Landlord Tax Returns</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Tell us a little about how we can help..."
+              required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-gold">
+            Send Enquiry
+          </button>
+
+        </form>
       </div>
 
     </div>
-
-    <div class="contact-form-wrapper">
-
-      <form class="contact-form">
-
-        <div class="form-group">
-          <label>Full Name</label>
-          <input type="text" placeholder="Your Name">
-        </div>
-
-        <div class="form-group">
-          <label>Email Address</label>
-          <input type="email" placeholder="your@email.com">
-        </div>
-
-        <div class="form-group">
-          <label>Phone Number</label>
-          <input type="tel" placeholder="Your Phone Number">
-        </div>
-
-        <div class="form-group">
-          <label>Service Required</label>
-
-          <select>
-            <option>Self Assessment</option>
-            <option>Limited Company Accounts</option>
-            <option>Payroll</option>
-            <option>Bookkeeping</option>
-            <option>CIS Returns</option>
-            <option>Landlord Tax Returns</option>
-            <option>Other</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label>Your Message</label>
-
-          <textarea
-            rows="5"
-            placeholder="Tell us a little about how we can help..."></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-gold">
-          Send Enquiry
-        </button>
-
-      </form>
-
-    </div>
-
-  </div>
-
-</section>
+  </section>
 
   <section class="contact-benefits">
-
     <div class="container">
-
       <p class="eyebrow center">Why Work With Us?</p>
-
       <h2>Simple accounting support without the jargon</h2>
 
       <div class="benefits-grid">
-
         <div class="benefit-card">
           <h3>Personal Service</h3>
-          <p>
-            You'll deal directly with Barbara,
-            not a call centre.
-          </p>
+          <p>You'll deal directly with Barbara, not a call centre.</p>
         </div>
 
         <div class="benefit-card">
           <h3>Quick Responses</h3>
-          <p>
-            We aim to respond to all enquiries promptly.
-          </p>
+          <p>We aim to respond to all enquiries promptly.</p>
         </div>
 
         <div class="benefit-card">
           <h3>Transparent Pricing</h3>
-          <p>
-            No hidden fees or unexpected costs.
-          </p>
+          <p>No hidden fees or unexpected costs.</p>
         </div>
-
       </div>
-
     </div>
-
   </section>
 
   <section class="cta">
-
     <div class="container cta-inner">
-
       <div>
         <h2>Ready to simplify your accounting?</h2>
-
         <p>
           Contact Precision Books today and let's discuss
           how we can support your business.
@@ -212,9 +211,7 @@
       <a href="tel:07305396792" class="btn btn-gold">
         Call Now
       </a>
-
     </div>
-
   </section>
 
 </main>
@@ -233,8 +230,16 @@
     <div>
       <h3>Contact</h3>
       <p>Northampton, UK</p>
-      <p>precisionbooks.info@gmail.com</p>
-      <p>07305 396 792</p>
+      <p>
+        <a href="mailto:precisionbooks.info@gmail.com">
+          precisionbooks.info@gmail.com
+        </a>
+      </p>
+      <p>
+        <a href="tel:07305396792">
+          07305 396 792
+        </a>
+      </p>
     </div>
 
     <div>
