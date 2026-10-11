@@ -1085,6 +1085,7 @@ p {
 .back-link:hover {
   color: var(--gold);
 }
+
 /* Upcoming self-employed app: restrained homepage teaser */
 .app-preview { background: var(--navy); padding: 74px 0; }
 .app-preview-inner { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(250px, .75fr); gap: clamp(28px, 5vw, 76px); align-items: center; }
@@ -1119,45 +1120,9 @@ p {
 .app-preview-brand span{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:#33415e;font-weight:700;text-align:center}
 @media(max-width:600px){.app-preview-brand{max-width:290px;padding:12px 16px}}
 
-/* Precision Books refined proportions - October 2026 */
-@media (min-width: 761px) {
-  .services-list, .pricing-grid { gap: 20px; }
-  .service-detail-card, .pricing-card { padding: 22px 23px; border-radius: 20px; }
-  .service-detail-card h2, .pricing-card h3 { font-size: clamp(1.15rem, 1.35vw, 1.4rem); line-height: 1.25; }
-  .service-detail-card p, .service-detail-card li, .pricing-card p, .pricing-card li { font-size: .89rem; line-height: 1.6; }
-  .service-detail-card ul, .pricing-card ul { margin: 12px 0; }
-  .service-icon { font-size: 1.4rem; margin-bottom: 11px; }
-  .pricing-card.featured { transform: none; }
-  .about-story { padding: 62px 0; }
-  .about-grid { gap: clamp(28px, 4vw, 56px); align-items: center; }
-  .about-content h2 { font-size: clamp(1.7rem, 2.5vw, 2.35rem); line-height: 1.2; margin-bottom: 18px; }
-  .about-content p { font-size: .96rem; line-height: 1.7; }
-  .about-image img { max-height: 570px; width: 100%; object-fit: cover; object-position: center top; }
-  .page-hero { padding-top: 43px; padding-bottom: 49px; }
-  .page-hero h1 { font-size: clamp(1.85rem, 2.8vw, 2.75rem); }
-  .services-page, .pricing-section { padding-top: 40px; padding-bottom: 55px; }
-}
-.hero-estavo-link { display: inline-flex; align-items: center; gap: 9px; margin: 20px 0 4px; color: #98762d; font-weight: 700; font-size: .93rem; text-decoration: underline; text-underline-offset: 4px; }
-.hero-estavo-link:hover { color: #14203a; }
-.app-preview { scroll-margin-top: 105px; }
-@media (min-width: 761px) { .app-preview { padding: 55px 0; } .app-preview h2 { font-size: clamp(1.75rem, 2.7vw, 2.45rem); } }
-@media (max-width: 760px) { .hero-estavo-link { margin-top: 16px; font-size: .88rem; } .service-detail-card, .pricing-card { padding: 22px; } }
 
-
-/* Hero polish: visible Estavo teaser and inset, compact photo/service panel */
-.hero-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(26px, 3.5vw, 52px); }
-.hero-content { width: 100%; max-width: none; }
-.hero-image { width: calc(100% - 22px); max-width: 620px; margin: 0 22px 0 0; justify-self: center; }
-.hero-image img { height: 440px; }
-.hero-service-card { right: -12px; top: 58%; width: 186px; padding: 7px 13px; border-radius: 18px; }
-.hero-service-card div { gap: 9px; padding: 9px 0; font-size: .79rem; line-height: 1.35; }
-.hero-service-card i { width: 20px; font-size: .97rem; flex-shrink: 0; }
-.hero-estavo-teaser { display: flex; align-items: center; gap: 13px; margin-top: 20px; padding: 12px 15px; border: 1px solid #e9d9b7; border-radius: 15px; background: #faf7ef; color: #1b263c; text-decoration: none; transition: border-color .2s, background .2s; }
-.hero-estavo-teaser:hover { border-color: #c09a45; background: #f7f0e1; }
-.hero-estavo-teaser img { width: 91px; max-height: 50px; object-fit: contain; flex-shrink: 0; }
-.hero-estavo-teaser-copy { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
-.hero-estavo-teaser-copy strong { font-size: .86rem; line-height: 1.3; }
-.hero-estavo-teaser-copy small { color: #866c35; font-size: .77rem; font-weight: 600; }
-@media (max-width: 1100px) and (min-width: 901px) { .hero-service-card { right: -9px; width: 174px; } .hero-image img { height: 410px; } }
-@media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; } .hero-image { width: 100%; max-width: 650px; margin: 0 auto; } .hero-image img { height: auto; } .hero-service-card { position: static; transform: none; width: 100%; margin-top: 12px; } }
-@media (max-width: 460px) { .hero-estavo-teaser { gap: 9px; padding: 10px; } .hero-estavo-teaser img { width: 76px; } .hero-estavo-teaser-copy strong { font-size: .78rem; } .hero-estavo-teaser-copy small { font-size: .69rem; } }
+/* Subtle Estavo link: preserve original hero grid, cards and typography */
+.estavo-small-link {display:inline-block;margin-top:14px;color:#98762d;font-size:.86rem;font-weight:700;text-decoration:none;line-height:1.45;}
+.estavo-small-link span{font-weight:500;color:#6e6a61;}
+.estavo-small-link:hover{text-decoration:underline;text-underline-offset:3px;}
+.app-preview{scroll-margin-top:100px;}
